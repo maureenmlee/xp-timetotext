@@ -1,4 +1,4 @@
-'use strict'
+ 'use strict'
 
 const testData = require('./data/test_data')
 const time2text = require('../time2text')
@@ -8,6 +8,9 @@ console.log('Testing time2text ...')
 const failedTests = testData
   .filter((item) => {
     item.actual = time2text(item.time)
+    //
+    if (item.text !== item.actual) { console.log("og", item.time, "expected", item.text, "actual", item.actual) }
+    //
     return item.text !== item.actual
   })
   .map((item) => {

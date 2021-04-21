@@ -10,5 +10,8 @@
   },
   "author": "",
   "license": "UNLICENSED",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
